@@ -41,18 +41,6 @@ body {
   padding: 12px 16px 16px;
   gap: 1rem;
 }
-.page.confirm-scroll {
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-  touch-action: pan-y;
-  overscroll-behavior-y: contain;
-  overflow-x: hidden;
-}
-
-
-.page.confirm-scroll .page__content {
-  overflow: visible;
-}
 
 .page__header { 
   display: grid; 

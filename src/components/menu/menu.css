@@ -2,8 +2,6 @@
 body.menu-open {
   overflow: hidden;
 }
-
-/* ---------- Hamburger button ---------- */
 .navicon{
   position:fixed;
   top:12px; left:12px;
@@ -13,14 +11,13 @@ body.menu-open {
   border:0;
   background:#ffe3ea;
   color:#e6325a;
-  z-index:30;               /* above dots/pagers */
+  z-index:30;
   cursor:pointer;
   box-shadow: 0 6px 16px rgba(230,50,90,.20);
   transition: transform .15s ease, background .2s ease;
 }
 .navicon:active { transform: scale(.98); }
 
-/* 3 bars */
 .navicon__bar{
   width:20px; height:2px;
   background:#e6325a;
@@ -30,7 +27,6 @@ body.menu-open {
 }
 .navicon__bar + .navicon__bar { margin-top:4px; }
 
-/* Turn into X when active */
 .navicon--active .navicon__bar:nth-child(1){
   transform: translateY(6px) rotate(45deg);
 }

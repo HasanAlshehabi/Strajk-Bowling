@@ -1,4 +1,3 @@
-// store/booking.ts
 import { create } from "zustand";
 import type { BookingRequest, BookingResponse } from "../types/Booking.js";
 import { fetchApiKey, createBookingStrict } from "../api/client";
@@ -99,7 +98,7 @@ export const useBooking = create<BookingState>((set, get) => ({
       const id =
       base?.id ??
       base?.bookingId ??
-      body?.bookingDetails?.bookingId ??     // <- << important
+      body?.bookingDetails?.bookingId ??
       body?.bookingId ??
       body?.data?.bookingId ??
       body?.data?.bookingDetails?.bookingId ?? 
