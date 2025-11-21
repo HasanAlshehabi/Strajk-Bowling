@@ -1,0 +1,37 @@
+.page--start {
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  min-height: 100svh;
+  background: #fff3f1;
+  padding: 0 16px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.page__title{
+  font-size: 45px;
+}
+
+.start__logo img {
+  width: 110px;
+  height: auto;
+}
+
+.page-start__header {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 16px;         
+}
+
+.page-start__content {
+  display: grid;
+  place-items: center;
+}
+
+.page-start__cta {
+  min-width: 220px;
+  height: 56px;
+  border-radius: 12px;
+  font-weight: 700;
+}

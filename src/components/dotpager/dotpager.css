@@ -1,0 +1,32 @@
+.dots {
+  position: fixed;
+  left: 50%;
+  bottom: max(16px, env(safe-area-inset-bottom));
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  padding: 6px 10px;
+  background: rgba(0,0,0,.35);
+  backdrop-filter: blur(6px);
+  border-radius: 999px;
+  z-index: 20;
+  pointer-events: none;
+}
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  border: 2px solid #fff;
+  background: transparent;
+  opacity: .6;
+  transition: transform .18s ease, opacity .18s ease, background-color .18s ease;
+  pointer-events: auto;
+}
+.dot--active { 
+  background: #fff; 
+  opacity: 1; 
+  transform: scale(1.2);
+ }
+@media (min-width: 600px) { 
+  .dots { bottom: 24px; } 
+}

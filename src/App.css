@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700&display=swap');
+
+
+html, body, #root { 
+  height: 100%; 
+}
+
+body { 
+  margin: 0; 
+  font-family: bebs neue
+ }
+
+.swiper-root, .swiper { 
+  height: 100svh;
+ }
+
+.swiper-wrapper { 
+  height: 100%;
+ }
+
+.swiper-slide {
+  display: flex;
+  height: 100%;
+  min-height: 0;
+  padding: 0;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  min-height: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff3f1;
+}
+
+.page__content {
+  flex: 1 1 auto;
+  min-height: 0;
+  padding: 12px 16px 16px;
+  gap: 1rem;
+}
+.page.confirm-scroll {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-y;
+  overscroll-behavior-y: contain;
+  overflow-x: hidden;
+}
+
+
+.page.confirm-scroll .page__content {
+  overflow: visible;
+}
+
+.page__header { 
+  display: grid; 
+  place-items: center; 
+  padding: 12px 16px 0;
+}
+
+.page__title {
+  margin: 0 0 8px;
+  font-weight: 800;
+  letter-spacing: .12rem;
+  text-transform: uppercase;
+  color: #e6325a;
+  text-align: center;
+}
+
+.btn { 
+    padding: .9rem 1.1rem; 
+    border-radius: 12px; 
+    border: 0; 
+    font-weight: 700; 
+}
+
+.btn.primary { 
+  background:#e6325a; 
+  color:white;
+}
+
+.btn.block { 
+  width: 100%;
+}
+
+

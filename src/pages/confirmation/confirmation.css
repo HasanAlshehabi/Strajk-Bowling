@@ -1,0 +1,176 @@
+.conf-page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+  width: 100%;
+  background: #fff3f1;
+  
+}
+
+.conf-page,
+.conf-page * {
+  box-sizing: border-box;
+}
+
+.conf-page--empty {
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  align-items: center;
+  height: 100%; 
+  min-height: 0;
+  padding: 0 16px;
+}
+
+.conf-page--scroll {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-y;
+  overscroll-behavior-y: contain;
+  overflow-x: hidden;
+}
+
+.conf-header {
+  display: grid;
+  place-items: center;
+  padding: 16px 16px 0;
+}
+
+.conf-title {
+  margin: 0 0 8px;
+  text-align: center;
+  color: #e6325a;
+  font-weight: 900;
+  font-size: 44px;
+  letter-spacing: .12rem;
+  text-transform: uppercase;
+}
+
+.conf-content {
+  flex: 1 1 auto;
+  min-height: 0;
+  padding: 12px 16px 24px;
+  padding-bottom: calc(24px + env(safe-area-inset-bottom));
+}
+.conf-content--empty {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 16px;
+  font-family:Bebas Neue 
+}
+.conf-empty-text { 
+  color: #5e3ea1; 
+  margin: 0;
+}
+
+.conf-section-head {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 10px;
+  margin: 6px 0 14px;
+  color: #5b39a6;
+  font-weight: 800;
+  letter-spacing: .15rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+.conf-section-head::before,
+.conf-section-head::after {
+  content: "";
+  height: 2px;
+  background: #7f61c9;
+  opacity: .9;
+  display: block;
+}
+.conf-section-head > span { padding: 0 6px; }
+
+.conf-detail {
+  position: relative;
+  border: 2px solid #6e49b7;
+  border-radius: 12px;
+  padding: 18px 16px 14px;
+  margin-bottom: 14px;
+}
+.conf-detail__label {
+  position: absolute;
+  top: -10px;
+  left: 14px;
+  background: #fff3f1;
+  padding: 0 8px;
+  font-size: .78rem;
+  color: #5e3ea1;
+  letter-spacing: .14rem;
+  text-transform: uppercase;
+}
+.conf-detail__value {
+  font-size: 22px;
+  line-height: 1.35;
+  color: #1b1330;
+}
+
+.conf-total-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #ff7f95;
+  border-radius: 12px;
+  background: #ffe9ee;
+  padding: 14px 16px;
+  margin: 16px 0 16px;
+  color: #e6325a;
+}
+.conf-total-card__label,
+.conf-total-card__amount { 
+  font-size: 20px; 
+}
+
+.conf-btn {
+  padding: .9rem 1.1rem;
+  border-radius: 12px;
+  border: 0;
+  font-weight: 700;
+  font-family:Bebas Neue 
+}
+
+.conf-btn--primary {
+  background: #e6325a;
+  color: #ffffff;
+}
+
+.conf-btn--wide {
+  width: 100%;
+  max-width: 320px;
+  height: 56px;
+  letter-spacing: .12rem;
+  box-shadow: 0 12px 30px rgba(230,50,90,.28);
+  border-radius: 10px;
+
+  display: block;
+  margin: 0 auto max(20px, env(safe-area-inset-bottom));
+}
+
+.conf-cta {
+  bottom: max(12px, env(safe-area-inset-bottom));
+  z-index: 2;
+  padding-bottom: max(12px, env(safe-area-inset-bottom));
+}
+
+.conf-cta .conf-btn {
+  display: block;
+  width: 100%;
+  max-width: 340px;
+  margin: 0 auto;   
+  font-size: 20px;
+}
+
+.conf-empty-cta {
+  margin-bottom: max(16px, env(safe-area-inset-bottom));
+}
+
+.conf-header .conf-logo img {
+  width: 90px;
+  height: auto;
+}
